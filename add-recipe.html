@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add your Recipe | Digital kitchen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #0e0e0e;
+      color: #d1c4e9;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #6a1b9a;
+    }
+
+    header h1 {
+      color: #ab47bc;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #4a148c;
+    }
+
+    nav a {
+      color: #ce93d8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e1bee7;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #1c1c1c;
+      border-left: 4px solid #8e24aa;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ba68c8;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      color: #ce93d8;
+    }
+
+    input, textarea, select {
+      background-color: #2e2e2e;
+      border: 1px solid #6a1b9a;
+      color: #e1bee7;
+      padding: 10px;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background-color: #6a1b9a;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      font-weight: bold;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #8e24aa;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top: 1px solid #4a148c;
+      color: #999;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+  <!--start od header-->
+  <header>
+    <h1>Add Your Recipe To Our Collection</h1>
+    <p>Fill out the form below to submit your recipe and share your cooking secrets with the world!</p>
+  </header>
+  <!--end of header-->
+
+
+  <!--satrt of navbar-->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="add-recipe.html">Add recipe Note</a>
+    <a href="recipe-list.html">All Recipes</a>
+  </nav>
+  <!--end of navbar-->
+
+
+  <!--start of main-->
+  <main>
+    <h2>Submit Your Recipe</h2>
+    <form>
+      
+      <label for="name">Recipe name</label>
+      <input type="text" id="name" name="name" placeholder="e.g. Chocolate Cacke, Spaghetti Carbonara" required>
+
+      <label for="ingredients">What ingredients did you need?</label>
+      <textarea id="ingredients" name="ingredients" placeholder="e.g. 2 cups of flour, 1 cup of sugar, 3 eggs..." required></textarea>
+
+      <label for="instructions">Step by step, how how did you prepare it?</label>
+      <textarea id="instructions" name="instructions" placeholder="e.g. mix dry ingredients, backe for 30 minutes..." required></textarea>
+
+      <label for="image">Link to an image that shows your dish (optional)</label>
+      <input type="url" id="image" name="image" placeholder="provide a link to an image of your dish (optional)">
+
+      <label for="category">Recipe Category</label>
+      <select id="category" name="category" required>
+        <option value="">Choose...</option>
+        <option value="loneliness">Desserts</option>
+        <option value="strength">Main Course</option>
+        <option value="grief">Appetizers</option>
+        <option value="hope">Snacks</option>
+        <option value="rebirth">Drinks</option>
+        <option value="shadow">Vegetarian | Vegan</option>
+      </select>
+
+      <button type="submit">Add to Recipe book</button>
+    </form>
+  </main>
+  <!--end of main-->
+
+  <footer>
+    &copy;2025 Digital kitchen. Crafted with care by Razma Azizi.
+  </footer>
+</body>
+</html>

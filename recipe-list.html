@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Gallery | Digital kitchen</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #0e0e0e;
+      color: #d1c4e9;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #6a1b9a;
+    }
+
+    header h1 {
+      color: #ab47bc;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #4a148c;
+    }
+
+    nav a {
+      color: #ce93d8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e1bee7;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      color: #ba68c8;
+      margin-bottom: 30px;
+    }
+
+    section#categories {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    section#categories select {
+      background-color: #2e2e2e;
+      border: 1px solid #6a1b9a;
+      color: #e1bee7;
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    .recipe-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .recipe-item {
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-left: 4px solid #8e24aa;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .recipe-item img {
+      width: 100%;
+      height: auto;
+      margin-top: 15px;
+      border-radius: 5px;
+    }
+
+    .recipe-item h3 {
+      color: #ce93d8;
+      font-size: 1.5em;
+    }
+
+    .recipe-item a {
+      color: #8e24aa;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .recipe-item a:hover {
+      color: #e1bee7;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top: 1px solid #4a148c;
+      color: #999;
+      margin-top: 60px;
+    }
+    .buttun-link{
+      padding: 10px 20px;
+  text-decoration: none;
+  border: 1px solid #8e24aa; 
+  border-radius: 5px;
+  display: inline-block;
+    }
+  </style>
+  </head>
+  <body>
+
+    <!--start of header-->
+    <header>
+      <h1>Recipe Gallery</h1>
+      <p>Explore a variety of recipes to try and enjoy!</p>
+    </header>
+    <!--end of header-->
+
+
+  <!--start of navbar-->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add-recipe.html">Add recipe Note</a>
+      <a href="recipe-list.html">All Recipes</a>
+    </nav>
+    <!--end of navbar-->
+
+
+  <!--start of main-->
+    <main>
+      <h2>Explore our recipe collection</h2>
+
+      <!--section 1-->
+      <section id="categories">
+        <label for="category">Filter by Category</label>
+        <select id="category" name="category">
+          <option value="all">All</option>
+          <option value="Desserts">Desserts</option>
+          <option value="Main Course">Main Course</option>
+          <option value="Appetizers">Appetizers</option>
+          <option value="Vegan">Vegan</option>
+          <option value="Snacks">Snacks</option>
+          <option value="Drinks">Drinks</option>
+        </select>
+      </section>
+      <!--end of section 1-->
+
+  
+      <!--section 2-->
+      <section class="recipe-list">
+        <!-- Example Recipe 1 -->
+        <div class="recipe-item">
+          <h3>Chocolate Cacke</h3>
+          <img src="images/photo_2025-04-06_08-49-44.jpg" alt="chocolate Cacke">
+          <p>A rich and moist dessert made with cocoa, perfect for any chocolate lover.</p>
+          <a class="buttun-link" href="recipe-details.html#cack">View Full Recipe</a>
+        </div>
+  
+        <!-- Example Recipe 2 -->
+        <div class="recipe-item">
+          <h3>Margherita Pizza</h3>
+          <img src="images/photo_2025-04-06_08-49-47.jpg" alt="Margherita pizza">
+          <p>A classic Italian pizza topped with fresh tomatoes, mozzarella, and basil.</p>
+          <a class="buttun-link" href="recipe-details.html#pizza">View Full Recipe</a>
+        </div>
+  
+        <!-- Example Recipe 3 -->
+        <div class="recipe-item">
+          <h3> strawber Smoothie</h3>
+          <img src="images/photo_2025-04-06_08-54-10.jpg" alt=" Strawberry Smoothie">
+          <p>A refreshing and healthy drink made with ripe bananas and sweet strawberries.</p>
+          <a class="buttun-link" href="recipe-details.html#smoo">View Full Recipe</a>
+        </div>
+
+      </section>
+     <!--end od section 2-->
+    </main>
+    <!--end of main-->
+
+  
+    <footer>
+      &copy;2025 Digital kitchen. Crafted with care by Razma Azizi.
+    </footer>
+  </body>
+  </html>

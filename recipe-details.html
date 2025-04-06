@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipe Details</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #0e0e0e;
+      color: #d1c4e9;
+    }
+
+    header {
+      background-color: #1a1a1a;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #6a1b9a;
+    }
+
+    header h1 {
+      color: #ab47bc;
+      margin: 0;
+    }
+
+    nav {
+      background-color: #111;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #4a148c;
+    }
+
+    nav a {
+      color: #ce93d8;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #e1bee7;
+    }
+
+    main {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .recipe-details {
+      background-color: rgb(36, 34, 34);
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    .recipe-details img {
+      width: 300px;
+      height: auto;
+      margin-top: 15px;
+      border-radius: 5px;
+
+    }
+
+
+    .recipe-details p {
+      color: #d1c4e9;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .recipe-details ul {
+      color: #d1c4e9;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #111;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9em;
+      border-top: 1px solid #4a148c;
+      color: #999;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!--start of header-->
+  <header>
+    <h1>Recipe Book</h1>
+    <p>Your go-to place for the best recipes!</p>
+  </header>
+  <!--end of header-->
+
+
+  <!--start of navbar-->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="add-recipe.html">Add Recipe</a>
+    <a href="recipe-list.html">Recipe List</a>
+  </nav>
+  <!--end of navbar-->
+
+
+  <!--start of main-->
+  <main>
+
+    <!--section 1-->
+    <section  class="recipe-details" id="spag" >
+      <table>
+      <tr>
+        <td><img class="recipe-details" src="images/spa_2025-04-06_10-59-16.jpg" alt="Spaghetti Bolognese"></td>
+        <td> <h3 style="margin-left: 20%;color:  #6a1b9a;">Spaghetti Bolognese</h3>
+          <p style="margin-left: 20px;">This is a classic Italian dish that combines rich meat sauce with perfectly cooked pasta. It's a comfort food for any occasion!</p></td>
+      </tr>
+      </table>
+
+      <ul>
+        <li>Boil water in a large pot and cook the spaghetti until al dente.</li>
+        <li>Heat oil in a pan and sauté chopped onions and garlic.</li>
+        <li>Add ground beef and cook until browned.</li>
+        <li>Pour in tomato sauce and add salt, pepper, and Italian herbs.</li>
+        <li>Let the sauce simmer for 15–20 minutes.</li>
+        <li>Drain the spaghetti and mix with the sauce, or serve the sauce on top.</li>
+        <li>Garnish with grated Parmesan cheese and fresh basil if desired.</li>
+      </ul>
+    </section>
+
+
+    <!--sectiom 2-->
+    <section  class="recipe-details" id="cack" >
+      <table>
+      <tr>
+        <td><img class="recipe-details" src="images/c_2025-04-06_11-36-00.jpg" alt="chocolate Cacke"></td>
+        <td> <h3 style="margin-left: 20%;color: #6a1b9a;">chocolate Cacke</h3>
+          <p style="margin-left: 20px;">Chocolate cake is a rich, moist dessert loved for its deep cocoa flavor and soft texture. It's perfect for celebrations or simply satisfying a sweet craving.</p></td>
+      </tr>
+      </table>
+
+      <ul>
+          <li>Preheat the oven to 350°F (175°C).</li>
+          <li>In a bowl, mix flour, cocoa powder, baking powder, and a pinch of salt.</li>
+          <li>In another bowl, beat eggs with sugar until fluffy, then add milk and oil.</li>
+          <li>Combine the wet and dry ingredients until smooth.</li>
+          <li>Pour the batter into a greased cake pan.</li>
+          <li>Bake for 30–35 minutes or until a toothpick comes out clean.</li>
+          <li>Let it cool, then frost with chocolate icing if desired.</li>
+      </ul>
+    </section>
+
+    <!--sectiom 3-->
+    <section  class="recipe-details" id="pizza" >
+      <table>
+      <tr>
+        <td><img class="recipe-details" src="images/o_2025-04-06_12-17-59.jpg" alt="Margherita pizza"></td>
+        <td> <h3 style="margin-left: 20%;color:  #6a1b9a;">Margherita pizza</h3>
+          <p style="margin-left: 20px;">Margherita pizza is a classic Italian dish made with fresh tomatoes, mozzarella cheese, and basil leaves. It's simple, delicious, and full of flavor.</p></td>
+      </tr>
+      </table>
+
+      <ul>
+          <li>Preheat the oven to 475°F (245°C).</li>
+          <li>Roll out the pizza dough on a floured surface.</li>
+          <li>Spread a thin layer of tomato sauce over the dough.</li>
+          <li>Add slices of fresh mozzarella cheese evenly.</li>
+          <li>Top with fresh basil leaves and a drizzle of olive oil.</li>
+          <li>Bake for 10–12 minutes until the crust is golden and the cheese is melted.</li>
+          <li>Remove from the oven, slice, and serve hot.</li>
+        </ol>
+    </section>
+
+    <!--sectiom 4-->
+    <section  class="recipe-details" id="smoo" >
+      <table>
+      <tr>
+        <td><img class="recipe-details" src="images/mk_2025-04-06_12-23-55.jpg" alt="Strawberry Smoothie"></td>
+        <td> <h3 style="margin-left: 20%;color:  #6a1b9a;">Strawberry Smoothie</h3>
+          <p style="margin-left: 20px;">This smoothie is a refreshing and healthy drink made with ripe bananas, sweet strawberries, and milk. It’s perfect for breakfast or a light snack.</p></td>
+      </tr>
+      </table>
+
+      <ul>
+          <li>Peel and slice one ripe banana.</li>
+          <li>Wash and hull 5–6 fresh strawberries.</li>
+          <li>Add the banana and strawberries to a blender.</li>
+          <li>Pour in 1 cup of milk (or a plant-based alternative).</li>
+          <li>Add 1–2 teaspoons of honey or sugar if desired.</li>
+          <li>Blend until smooth and creamy.</li>
+          <li>Pour into a glass and enjoy chilled.</li>
+        </ul>
+    </section>
+  </main>
+   <!--end of main-->
+
+
+  <!--start of footer-->
+  <footer>
+    &copy; 2025 Recipe Book. All rights reserved.
+  </footer>
+  <!--end of footer-->
+</body>
+</html>
